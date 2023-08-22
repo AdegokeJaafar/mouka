@@ -125,18 +125,16 @@ li > a {
   display: flex;
   justify-content: center;
   gap: 100px;
-  
 }
 
 .mySlides {
-    margin-top: 30px;
-    color: #829AAA;
+  margin-top: 30px;
+  color: #829aaa;
 }
 
-.mySlides.active{
-    color: #033f62;
+.mySlides.active {
+  color: #033f62;
 }
-  
 
 .prev,
 .next {
@@ -158,12 +156,34 @@ li > a {
   border-radius: 3px 0 0 3px;
 }
 
-.prev{
-    left: 200px;
-    justify-self: center;
+.prev {
+  left: 200px;
+  justify-self: center;
 }
 
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+  header {
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding: 0; */
+    /* margin-right: 1em; */
+    width: calc(100% - 1em);
+    top: 0;
+  }
+  body,
+  html {
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  body {
+    padding: 0;
+  }
 }
